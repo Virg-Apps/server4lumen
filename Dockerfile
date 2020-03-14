@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.3-apache
 
 RUN apt-get update && apt-get install -y git zip libpng-dev libfreetype6-dev libjpeg62-turbo-dev && \
     docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd && \
